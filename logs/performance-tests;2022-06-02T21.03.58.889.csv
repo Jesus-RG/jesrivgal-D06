@@ -1,0 +1,3 @@
+timestamp,test-class,test-method,time,description,result
+"2022-06-02 21:02:21.713","acme.testing.inventor.chimpum.InventorChimpumShowTest","positiveTest",8717,""[1] recordIndex=0, code=AAA-22-05-28, title=Esto es una prueba1, description=Esto es una prueba5, budget=EUR 100.00, creationMoment=2022/05/28 10:00, startDate=2022/06/01 10:00, endDate=2022/06/08 10:00, moreInfo=https://moreinfo.com/"","OK"
+"2022-06-02 21:02:28.948","acme.testing.inventor.chimpum.InventorChimpumShowTest","positiveTest",7001,""[2] recordIndex=1, code=BBB-22-05-29, title=Esto es una prueba2, description=Esto es una prueba6, budget=EUR 200.00, creationMoment=2022/05/29 11:00, startDate=2022/06/02 11:00, endDate=2022/06/09 11:00, moreInfo=null"","OK"

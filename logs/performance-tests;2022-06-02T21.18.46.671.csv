@@ -1,0 +1,6 @@
+timestamp,test-class,test-method,time,description,result
+"2022-06-02 21:13:35.504","acme.testing.inventor.chimpum.InventorChimpumCreateDeleteTest","positiveTest",22145,""[1] recordIndex=0, code=ZZZ, title=PruebaCrear1, description=PruebaCrear2, budget=GBP 500.00, startDate=2022/11/25 11:00, endDate=2022/12/15 11:00, moreInfo=null"","OK"
+"2022-06-02 21:13:49.85","acme.testing.inventor.chimpum.InventorChimpumCreateDeleteTest","hackingCreateTest",13823,""hackingCreateTest()"","OK"
+"2022-06-02 21:14:03.529","acme.testing.inventor.chimpum.InventorChimpumCreateDeleteTest","hackingDeleteTest",13424,""hackingDeleteTest()"","OK"
+"2022-06-02 21:14:12.722","acme.testing.inventor.chimpum.InventorChimpumCreateDeleteTest","negativeTest",8939,""[1] recordIndex=0, code=BBB, title=null, description=This is a test, budget=EUR 200.00, startDate=2022/08/20 20:00, endDate=2022/08/28 20:00, moreInfo=null"","OK"
+"2022-06-02 21:14:21.853","acme.testing.inventor.chimpum.InventorChimpumCreateDeleteTest","negativeTest",8876,""[2] recordIndex=1, code=CCC, title=This is a negative test, description=null, budget=EUR 200.00, startDate=2022/08/20 20:00, endDate=2022/08/28 20:00, moreInfo=null"","OK"

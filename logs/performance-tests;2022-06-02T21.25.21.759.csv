@@ -1,0 +1,4 @@
+timestamp,test-class,test-method,time,description,result
+"2022-06-02 21:24:31.451","acme.testing.inventor.chimpum.InventorChimpumUpdateTest","positiveTest",7798,""[1] recordIndex=0, code=AAA-22-05-28, title=Esto es una prueba de update, description=Esto es una prueba de update, budget=USD 10.50, startDate=2022/06/01 10:00, endDate=2022/06/08 10:00, moreInfo=null"","Errors were unexpected, but found"
+"2022-06-02 21:24:44.742","acme.testing.inventor.chimpum.InventorChimpumUpdateTest","hackingTest",13038,""hackingTest()"","OK"
+"2022-06-02 21:24:52.942","acme.testing.inventor.chimpum.InventorChimpumUpdateTest","negativeTest",7978,""[1] recordIndex=0, code=AAA-22-05-24, title=null, description=This is a test, budget=EUR 200.00, startDate=2022/08/20 20:00, endDate=2022/08/28 20:00, moreInfo=null"","OK"

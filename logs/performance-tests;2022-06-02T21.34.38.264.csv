@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-06-02 21:28:15.934","acme.testing.inventor.chimpum.InventorChimpumUpdateTest","positiveTest",13471,""[1] recordIndex=0, code=AAA-22-05-28, title=Esto es una prueba de update, description=Esto es una prueba de update, budget=USD 10.50, startDate=2022/09/10 10:00, endDate=2022/09/18 10:00, moreInfo=null"","OK"
