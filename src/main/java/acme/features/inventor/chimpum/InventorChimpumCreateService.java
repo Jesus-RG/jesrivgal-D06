@@ -47,17 +47,12 @@ public class InventorChimpumCreateService implements AbstractCreateService<Inven
 	@Override
 	public void bind(final Request<Chimpum> request, final Chimpum entity, final Errors errors) {
 		request.bind(entity, errors, "code", "title", "description", "budget", "creationMoment", "startDate", "endDate", "moreInfo");
-		final LocalDate creationMoment =  entity.getCreationMoment().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-		entity.setCode(entity.getCode()+"-"+this.generateCode(creationMoment));
 	}
 
 	@Override
 	public void unbind(final Request<Chimpum> request, final Chimpum entity, final Model model) {
-		request.unbind(entity, model, "title", "description", "budget", "creationMoment", "startDate", "endDate", "moreInfo");	
+		request.unbind(entity, model, "code", "title", "description", "budget", "creationMoment", "startDate", "endDate", "moreInfo");	
 		model.setAttribute("itemId", request.getModel().getInteger("itemId"));
-		if(entity.getCode()!=null) {
-			model.setAttribute("code", entity.getCode().substring(0, 3));
-		}
 	}
 
 	@Override
@@ -70,7 +65,8 @@ public class InventorChimpumCreateService implements AbstractCreateService<Inven
 	
 		res = new Chimpum();
 		res.setCreationMoment(now);
-//		result.setCode(this.codeGenerator(moment));
+		final LocalDate creationMoment =  res.getCreationMoment().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+		res.setCode(this.generateCode(creationMoment));
 		return res;
 	}
 
@@ -89,16 +85,6 @@ public class InventorChimpumCreateService implements AbstractCreateService<Inven
         final double StrongThreshold = systemConfig.getStrongThreshold();
         final double WeakThreshold = systemConfig.getWeakThreshold();
         
-        if(!errors.hasErrors("code")) {
-        	
-    		Chimpum chimpumPrev;
-    		chimpumPrev = this.inventorChimpumRepository.findChimpumByCode(entity.getCode());
-    		
-    		if(chimpumPrev!=null) {
-    			errors.state(request, chimpumPrev.getId()==entity.getId(), "code", "inventor.chimpum.form.error.duplicated-code");
-    		}
-    	}
-		
         if(!errors.hasErrors("title")) {
             final boolean res;
             res = SpamDetector.spamDetector(entity.getTitle(),StrongEN,StrongES,WeakEN,WeakES,StrongThreshold,WeakThreshold);

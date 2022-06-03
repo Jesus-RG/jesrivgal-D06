@@ -12,7 +12,7 @@ public class InventorChimpumCreateDeleteTest extends TestHarness {
 	@ParameterizedTest
 	@Order(10)
 	@CsvFileSource(resources = "/inventor/chimpum/chimpum-create-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
-	public void positiveTest(final int recordIndex, final String code,final String title, final String description,final String budget
+	public void positiveTest(final int recordIndex, final String title, final String description,final String budget
 		,final String startDate,final String endDate, final String moreInfo){
 		
 		super.signIn("inventor1", "inventor1");
@@ -22,7 +22,6 @@ public class InventorChimpumCreateDeleteTest extends TestHarness {
 		
 		super.clickOnButton("Create Chimpum");
 		
-		super.fillInputBoxIn("code", code);
 		super.fillInputBoxIn("title", title);
 		super.fillInputBoxIn("description", description);
 		super.fillInputBoxIn("budget", budget);
@@ -52,7 +51,7 @@ public class InventorChimpumCreateDeleteTest extends TestHarness {
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/chimpum/chimpum-create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
-	public void negativeTest(final int recordIndex, final String code, final String title, final String description,final String budget
+	public void negativeTest(final int recordIndex, final String title, final String description,final String budget
 		,final String startDate,final String endDate, final String moreInfo) {
 		
 		super.signIn("inventor1", "inventor1");
@@ -62,7 +61,6 @@ public class InventorChimpumCreateDeleteTest extends TestHarness {
 		
 		super.clickOnButton("Create Chimpum");
 		
-		super.fillInputBoxIn("code", code);
 		super.fillInputBoxIn("title", title);
 		super.fillInputBoxIn("description", description);
 		super.fillInputBoxIn("budget", budget);

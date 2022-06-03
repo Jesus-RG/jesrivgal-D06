@@ -1,7 +1,6 @@
 package acme.features.inventor.chimpum;
 
 import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -90,20 +89,6 @@ public class InventorChimpumUpdateService implements AbstractUpdateService<Inven
         final double StrongThreshold = systemConfig.getStrongThreshold();
         final double WeakThreshold = systemConfig.getWeakThreshold();
 		
-        if(!errors.hasErrors("code")) {
-        	final String dateSideOfCode = entity.getCode().substring(4,12);
-        	final LocalDate creationMoment =  entity.getCreationMoment().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-        	final String code = this.generateCode(creationMoment);
-    		Chimpum chimpum;
-
-    		chimpum = this.inventorChimpumRepository.findChimpumByCode(entity.getCode());
-    		
-        	errors.state(request, dateSideOfCode.equals(code), "code", "inventor.chimpum.form.error.bad-code");
-    		if(chimpum!=null) {
-    			errors.state(request, chimpum.getId()==entity.getId(), "code", "inventor.chimpum.form.error.duplicated-code");
-    		}
-    	}
-        
         if(!errors.hasErrors("title")) {
             final boolean res;
             res = SpamDetector.spamDetector(entity.getTitle(),StrongEN,StrongES,WeakEN,WeakES,StrongThreshold,WeakThreshold);

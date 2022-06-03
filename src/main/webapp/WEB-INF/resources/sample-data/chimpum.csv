@@ -1,5 +1,5 @@
 key,code,creationMoment,title,description,startDate,endDate,budget,moreInfo
-chimpum-01,AAA-22-05-28,2022/05/28 10:00,Esto es una prueba1,Esto es una prueba5,2022/06/01 10:00,2022/06/08 10:00,EUR 100.00,https://moreinfo.com/
-chimpum-02,BBB-22-05-29,2022/05/29 11:00,Esto es una prueba2,Esto es una prueba6,2022/06/02 11:00,2022/06/09 11:00,EUR 200.00,null
-chimpum-03,CCC-22-05-30,2022/05/30 22:00,Esto es una prueba3,Esto es una prueba7,2022/06/10 22:00,2022/06/20 22:00,USD 10.00,null
-chimpum-04,DDD-22-05-30,2022/05/30 23:00,Esto es una prueba4,Esto es una prueba8,2022/06/15 23:00,2022/06/29 23:00,USD 50.00,null
+chimpum-01,22-05-28,2022/05/28 10:00,Esto es una prueba1,Esto es una prueba5,2022/06/01 10:00,2022/06/08 10:00,EUR 100.00,https://moreinfo.com/
+chimpum-02,22-05-29,2022/05/29 11:00,Esto es una prueba2,Esto es una prueba6,2022/06/02 11:00,2022/06/09 11:00,EUR 200.00,null
+chimpum-03,22-05-30,2022/05/30 22:00,Esto es una prueba3,Esto es una prueba7,2022/06/10 22:00,2022/06/20 22:00,USD 10.00,null
+chimpum-04,22-05-30,2022/05/30 23:00,Esto es una prueba4,Esto es una prueba8,2022/06/15 23:00,2022/06/29 23:00,USD 50.00,null
