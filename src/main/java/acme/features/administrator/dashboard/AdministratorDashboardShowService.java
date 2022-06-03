@@ -202,29 +202,29 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		/*Chimpums*/
 		
 		//ratioOfItemsWithChimpum
-		ratioOfItemsWithChimpum = this.repository.ratioOfItemsWithChimpum();
+		ratioOfItemsWithChimpum = this.repository.ratioOfToolsWithRustora();
 		
 		//averageBudgetOfChimpumsByCurrency
 		for(final String currency: currencies) {
-			final Double averageBudgetOfChimpumsByX =  this.repository.averageBudgetOfChimpumByCurrency(currency);
+			final Double averageBudgetOfChimpumsByX =  this.repository.averageQuotaOfRustoraByCurrency(currency);
 			averageBudgetOfChimpumsByCurrency.put(currency, averageBudgetOfChimpumsByX);
 		}
 				
 		//deviationBudgetOfChimpumsByCurrency
 		for(final String currency: currencies) {
-			final Double deviationBudgetOfChimpumsByX = this.repository.deviationBudgetOfChimpumByCurrency(currency);
+			final Double deviationBudgetOfChimpumsByX = this.repository.deviationQuotaOfRustoraByCurrency(currency);
 			deviationBudgetOfChimpumsByCurrency.put(currency, deviationBudgetOfChimpumsByX);
 		}
 				
 		//minimumBudgetOfChimpumsByCurrency
 		for(final String currency: currencies) {
-			final Double minimumBudgetOfChimpumsByX = this.repository.minimumBudgetOfChimpumByCurrency(currency);
+			final Double minimumBudgetOfChimpumsByX = this.repository.minimumQuotaOfRustoraByCurrency(currency);
 			minimumBudgetOfChimpumsByCurrency.put(currency, minimumBudgetOfChimpumsByX);
 		}
 				
 		//maximumBudgetOfChimpumsByCurrency
 		for(final String currency: currencies) {
-			final Double maximumBudgetOfChimpumsByX = this.repository.maximumBudgetOfChimpumByCurrency(currency);
+			final Double maximumBudgetOfChimpumsByX = this.repository.maximumQuotaOfRustoraByCurrency(currency);
 			maximumBudgetOfChimpumsByCurrency.put(currency, maximumBudgetOfChimpumsByX);
 		}
 		

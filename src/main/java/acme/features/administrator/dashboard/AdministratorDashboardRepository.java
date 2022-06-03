@@ -61,19 +61,19 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("SELECT p.budget.currency, max(p.budget.amount) FROM Patronage p WHERE p.status = :status GROUP BY p.budget.currency")
 	Collection<Tuple> maximumBudgetPatronagesByStatus(Status status);
 	
-	//Chimpum
-	@Query("select 1.0 * count(a) / (select count(b) FROM Item b) FROM Chimpum a")
-	Double ratioOfItemsWithChimpum();
+	//Rustora
+	@Query("select 1.0 * count(a) / (select count(b) FROM Item b) FROM Rustora a")
+	Double ratioOfToolsWithRustora();
 		
-	@Query("select avg(c.budget.amount) FROM Chimpum c WHERE c.budget.currency = :currency")
-	Double averageBudgetOfChimpumByCurrency(String currency);
+	@Query("select avg(r.quota.amount) FROM Rustora r WHERE r.quota.currency = :currency")
+	Double averageQuotaOfRustoraByCurrency(String currency);
 		
-	@Query("select stddev(c.budget.amount) FROM Chimpum c WHERE c.budget.currency = :currency")
-	Double deviationBudgetOfChimpumByCurrency(String currency);
+	@Query("select stddev(r.quota.amount) FROM Rustora r WHERE r.quota.currency = :currency")
+	Double deviationQuotaOfRustoraByCurrency(String currency);
 		
-	@Query("select min(c.budget.amount) FROM Chimpum  c WHERE c.budget.currency = :currency")
-	Double minimumBudgetOfChimpumByCurrency(String currency);
+	@Query("select min(r.quota.amount) FROM Rustora r WHERE r.quota.currency = :currency")
+	Double minimumQuotaOfRustoraByCurrency(String currency);
 		
-	@Query("select max(c.budget.amount) FROM Chimpum c WHERE c.budget.currency = :currency")
-	Double maximumBudgetOfChimpumByCurrency(String currency);
+	@Query("select max(r.quota.amount) FROM Rustora r WHERE r.quota.currency = :currency")
+	Double maximumQuotaOfRustoraByCurrency(String currency);
 }

@@ -1,9 +1,9 @@
-key,name,code,technology,description,retail-price,info,item-type,published,key:inventor,key:chimpum
-item-01,mouse,ABC-123,super,it's a item,EUR 155.0,https://regexr.com/,TOOL,true,inventor-01,chimpum-01
+key,name,code,technology,description,retail-price,info,item-type,published,key:inventor,key:rustora
+item-01,mouse,ABC-123,super,it's a item,EUR 155.0,https://regexr.com/,TOOL,true,inventor-01,rustora-01
 item-02,keyboard,ABC-124-C,super,"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has s.",EUR 1025.0,https://regexr.com/,COMPONENT,true,inventor-01,null
-item-03,screw,FRC-125,super,it's a item,EUR 130.0,https://regexr.com/,TOOL,true,inventor-01,chimpum-02
-item-11,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the,ABC-125,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the,"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has s.",EUR 168.75,https://regexr.com/,TOOL,true,inventor-01,chimpum-03
-item-12,hammer,BCD-124,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the,it's a item,USD 10.0,https://regexr.com/,TOOL,true,inventor-01,chimpum-04
+item-03,screw,FRC-125,super,it's a item,EUR 130.0,https://regexr.com/,TOOL,true,inventor-01,rustora-02
+item-11,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the,ABC-125,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the,"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has s.",EUR 168.75,https://regexr.com/,TOOL,true,inventor-01,rustora-03
+item-12,hammer,BCD-124,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the,it's a item,USD 10.0,https://regexr.com/,TOOL,true,inventor-01,rustora-04
 item-31,screwdriver,BCD-125,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the,it's a item,EUR 103.60,https://regexr.com/,TOOL,true,inventor-01,null
 item-32,a,BCD-126,limited,it's a item,EUR 265.58,https://regexr.com/,TOOL,true,inventor-01,null
 item-33,axe,HLS-124,limited,it's a item,USD 845.32,https://regexr.com/,TOOL,true,inventor-01,null

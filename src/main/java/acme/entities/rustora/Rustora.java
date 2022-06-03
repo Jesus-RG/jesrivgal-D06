@@ -1,4 +1,4 @@
-package acme.entities.chimpum;
+package acme.entities.rustora;
 
 import java.util.Date;
 
@@ -22,12 +22,12 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Chimpum extends AbstractEntity{
+public class Rustora extends AbstractEntity{
 	
 	protected static final long serialVersionUID = 1L;
 	
 	@NotBlank
-	@Pattern(regexp = "^[0-9]{2}-[0-9]{2}-[0-9]{2}$")
+	@Pattern(regexp = "^[0-9]{6}[#]{1}\\w{3}$")
 	protected String code;
 
 	@NotNull
@@ -37,11 +37,11 @@ public class Chimpum extends AbstractEntity{
 	
 	@NotBlank
 	@Length(min=1, max = 100)
-	protected String title;
+	protected String theme;
 	
 	@NotBlank
 	@Length(min=1, max = 255)
-	protected String description;
+	protected String explanation;
 	
 	@NotNull
     @Temporal(TemporalType.TIMESTAMP)
@@ -53,7 +53,7 @@ public class Chimpum extends AbstractEntity{
 	
 	@NotNull
 	@Valid
-	protected Money budget;
+	protected Money quota;
 
 	@URL
 	protected String moreInfo;
